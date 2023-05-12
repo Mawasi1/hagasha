@@ -45,12 +45,21 @@ nav{
     margin: 0px 0px;
     padding: 0px 0px;
 }
-#RemoveClothingBtn{
-    background-image: url('../images/icons/delete.png');
+.clothingButton{
     background-repeat: no-repeat;
     background-attachment: local;
+}
+#removeClothingBtn{
+    background-image: url('../images/icons/delete.png');
     background-position: left;
     background-size: 20px;
     width: 220px;
     font-weight: bold;
+}
+#editClothingBtn{
+    background-image: url('../images/icons/edit.png');
+    background-position: center;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
 }
