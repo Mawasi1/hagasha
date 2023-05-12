@@ -87,7 +87,7 @@
                         <img id="clothingImage" class="mx-auto d-block" src="./images/shirts/flannel-striped-shirt.png">
                     </div>
                 </div>
-                <form action="./get_product.php" method="get">
+                <form name="addClothingForm" action="./get_product.php" method="get" onsubmit="return validateForm()">
                     <!--            Blue line           -->
                     <div class="row">
                         <div class="col-6 mx-auto">
@@ -151,7 +151,7 @@
                         </div>
                         <div class="col-6 text-center">
                             <select class="form-select text-center mx-auto" name="category" aria-label="Default select example">
-                                <option selected>Select a category</option>
+                                <option selected value="default">Select a category</option>
                                 <option value="jackets">Tops: Jackets</option>
                                 <option value="coats">Tops: Coats</option>
                                 <option value="shirts">Tops: Shirts</option>
