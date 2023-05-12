@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header,
+main,
+footer,
+nav,
+aside,
+section,
+div {
+    display: block;
+}
+
+main{
+    background-color: #F7F6F6;
+}
+
+header{
+    
+    
+}
+
+nav{
+    margin-left:50px;
+}
+
+.main-container{
+    background-color: white;
+}
