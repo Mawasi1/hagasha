@@ -43,6 +43,9 @@
 
                 <div class="container text-center">
                     <div class="row row-added-product">
+                        <?php $src = './images/shirts/flannel-striped-shirt.png';
+                        ?>
+                        <img src='<?php echo $src ?>'>
                         <h3>
                             Name:
                             <?php echo $_GET["item"]; ?><br>
