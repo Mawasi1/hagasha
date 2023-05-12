@@ -74,6 +74,10 @@ nav{
     max-width: 200px;
 }
 
+.row-added-product{
+    background-color: #F7F6F6;
+}
+
 
 @media only screen and (max-width: 900px){
     .breadcrumb{
