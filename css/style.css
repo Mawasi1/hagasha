@@ -14,19 +14,29 @@ div {
     display: block;
 }
 
-main{
+main {
     background-color: #F7F6F6;
 }
 
-header{
-    
-    
+header {}
+
+nav {
+    margin-left: 50px;
 }
 
-nav{
-    margin-left:50px;
-}
-
-.main-container{
+.main-container {
     background-color: white;
+}
+
+.mx-auto {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mx-auto img {
+    height: 25px;
+    width: 25px;
+
 }
