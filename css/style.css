@@ -63,3 +63,12 @@ nav{
     width: 30px;
     height: 30px;
 }
+.btn-outline-success, .btn-outline-danger{
+    min-width: 120px;
+    max-width: 120px;
+}
+@media only screen and (max-width: 900px){
+    .breadcrumb{
+        display: none;
+    }
+}
