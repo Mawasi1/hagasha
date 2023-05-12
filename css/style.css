@@ -30,3 +30,18 @@ nav{
 .main-container{
     background-color: white;
 }
+#clothingImage{
+    max-width: 100%;
+    max-height: 100%;
+}
+.clothingLine{
+    width: 20%;
+    height: 1px;
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+#clothingColors img{
+    max-height: 30px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
