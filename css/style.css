@@ -67,6 +67,14 @@ nav{
     min-width: 120px;
     max-width: 120px;
 }
+
+
+.card img, .card{
+    min-width: 200px;
+    max-width: 200px;
+}
+
+
 @media only screen and (max-width: 900px){
     .breadcrumb{
         display: none;
