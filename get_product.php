@@ -106,13 +106,16 @@
                             <?php echo $_GET["item"]; ?><br>
 
                             Colors:<br>
-                            <div class="col-6 text-center">
-                                <?php $src1 = './images/colors/red1.png';
-                                $src2 = './images/colors/red2.png';
-                                $src3 = './images/colors/red3.png'; ?>
-                                <img src='<?php echo $src1 ?>'>
-                                <img src='<?php echo $src2 ?>'>
-                                <img src='<?php echo $src3 ?>'>
+                            <div class="col text-center ">
+                                <div id="clothingColors" class="mx-auto d-flex justify-content-center">
+
+                                    <?php $src1 = './images/colors/red1.png';
+                                    $src2 = './images/colors/red2.png';
+                                    $src3 = './images/colors/red3.png'; ?>
+                                    <img src='<?php echo $src1 ?>'>
+                                    <img src='<?php echo $src2 ?>'>
+                                    <img src='<?php echo $src3 ?>'>
+                                </div>
                             </div>
                             Product size:
                             <?php echo $_GET["size"]; ?><br>
