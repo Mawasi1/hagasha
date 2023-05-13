@@ -106,10 +106,14 @@
                             <?php echo $_GET["item"]; ?><br>
 
                             Colors:<br>
-                            <? foreach ($_GET['colors'] as $value) {
-                                echo $value . ' ';
-                            } ?> <br>
-
+                            <div class="col-6 text-center">
+                                <?php $src1 = './images/colors/red1.png';
+                                $src2 = './images/colors/red2.png';
+                                $src3 = './images/colors/red3.png'; ?>
+                                <img src='<?php echo $src1 ?>'>
+                                <img src='<?php echo $src2 ?>'>
+                                <img src='<?php echo $src3 ?>'>
+                            </div>
                             Product size:
                             <?php echo $_GET["size"]; ?><br>
 
