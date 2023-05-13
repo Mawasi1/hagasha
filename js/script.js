@@ -16,13 +16,11 @@ function validateForm(){
     if (!clothingName) {
         window.setTimeout(function() { document.addClothingForm.item.focus(); },0);
         document.getElementById(`invalidName`).style.display = `block`;
-        window.alert(`Please write The clothing item's name`);
         errorFlag = 1;
     }
     if (clothingSize == `default`){
         window.setTimeout(function() { document.addClothingForm.size.focus(); },0);
         document.getElementById(`invalidSize`).style.display = `block`;
-        window.alert(`Please select a size from the dropdown list`);
         if (errorFlag == 0){
             window.setTimeout(function() { document.addClothingForm.size.focus(); },0);
             errorFlag = 1;
@@ -31,7 +29,6 @@ function validateForm(){
     if (clothingCloset == `default`){
         window.setTimeout(function() { document.addClothingForm.closet.focus(); },0);
         document.getElementById(`invalidCloset`).style.display = `block`;
-        window.alert(`Please select a closet from the dropdown list`);
         if (errorFlag == 0){
             window.setTimeout(function() { document.addClothingForm.closet.focus(); },0);
             errorFlag = 1;
@@ -40,7 +37,6 @@ function validateForm(){
     if (clothingCategory == `default`){
         window.setTimeout(function() { document.addClothingForm.category.focus(); },0);
         document.getElementById(`invalidCategory`).style.display = `block`;
-        window.alert(`Please select a category from the dropdown list`);
         if (errorFlag == 0){
             window.setTimeout(function() { document.addClothingForm.category.focus(); },0);
             errorFlag = 1;
@@ -49,7 +45,6 @@ function validateForm(){
     if (clothingBrand == `default`){
         window.setTimeout(function() { document.addClothingForm.brand.focus(); },0);
         document.getElementById(`invalidBrand`).style.display = `block`;
-        window.alert(`Please select a brand from the dropdown list`);
         if (errorFlag == 0){
             window.setTimeout(function() { document.addClothingForm.brand.focus(); },0);
             errorFlag = 1;
