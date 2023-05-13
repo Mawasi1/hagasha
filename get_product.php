@@ -18,15 +18,63 @@
     <header class="p-4 py-3 border-bottom">
         <div class="d-flex align-items-center justify-content-center justify-content-md-between "
             style="grid-template-columns: 1fr 2fr;">
+            <!--    Hamburger menu-->
+            <div class="col-4 mb-2 mb-md-0 header-hamburger">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <img src="./images/icons/hamburger.png" height="40" width="40">
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <!--        hamburger contents-->
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    logo      -->
+            <div class="col-4 d-flex col-md-auto mb-2 justify-content-center mb-md-0 header-logo">
+                <a class="clother-logo" href="./index.html"> <img src="./images/icons/new_logo.png" class=""
+                        height="40"></a>
+            </div>
+            <!--    User panel    -->
+            <div class="col-4 d-flex justify-content-end text-end header-user-menu">
+                <div class="flex-shrink-0 dropdown">
+                    <button class=" btn d-block link-dark text-decoration-none dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </button>
+                    <ul class="dropdown-menu text-small shadow dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        </div>
-        <!--    logo      -->
-        <div class="col-4 d-flex col-md-auto mb-2 justify-content-center mb-md-0 header-logo">
-            <a class="clother-logo" href="./index.html"> <img src="./images/icons/new_logo.png" class=""
-                    height="40"></a>
-        </div>
-
-        </div>
     </header>
 
     <div class="container-fluid ">
@@ -42,48 +90,35 @@
                 </div>
 
                 <div class="container text-center">
-                    <div class="row row-added-product">
-                        <?php $src = './images/shirts/flannel-striped-shirt.png';
-                        ?>
-                        <img src='<?php echo $src ?>'>
+                    <div class="row py-3">
+                        <div class=container-sm>
+                            <?php $src = './images/shirts/flannel-striped-shirt.png';
+                            ?>
+                            <img src='<?php echo $src ?>'>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mx-auto">
+                                <div class=" mx-auto clothingLine d-block"></div>
+                            </div>
+                        </div>
                         <h3>
                             Name:
                             <?php echo $_GET["item"]; ?><br>
-                            <div class="row">
-                                <div class="col-6 mx-auto">
-                                    <div class=" mx-auto clothingLine d-block"></div>
-                                </div>
-                            </div>
+
                             Colors:<br>
                             <? foreach ($_GET['colors'] as $value) {
                                 echo $value . ' ';
                             } ?> <br>
-                            <div class="row">
-                                <div class="col-6 mx-auto">
-                                    <div class=" mx-auto clothingLine d-block"></div>
-                                </div>
-                            </div>
+
                             Product size:
                             <?php echo $_GET["size"]; ?><br>
-                            <div class="row">
-                                <div class="col-6 mx-auto">
-                                    <div class=" mx-auto clothingLine d-block"></div>
-                                </div>
-                            </div>
+
                             Closet:
                             <?php echo $_GET["closet"]; ?><br>
-                            <div class="row">
-                                <div class="col-6 mx-auto">
-                                    <div class=" mx-auto clothingLine d-block"></div>
-                                </div>
-                            </div>
+
                             Category:
                             <?php echo $_GET["category"]; ?><br>
-                            <div class="row">
-                                <div class="col-6 mx-auto">
-                                    <div class=" mx-auto clothingLine d-block"></div>
-                                </div>
-                            </div>
+
                             Brand name:
                             <?php echo $_GET["brand"]; ?><br>
                         </h3>
