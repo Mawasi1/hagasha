@@ -103,6 +103,9 @@
                             <input class="form-control" type="text" name="item" value="" placeholder="Item's name">
                         </div>
                         <div class="col-3"></div>
+                        <div id="invalidName" class="invalid-feedback text-center">
+                            Please write The clothing item's name
+                        </div>
                     </div>
                     <div class="row 3 py-3">
                         <div class="col-3">
@@ -123,11 +126,14 @@
                         </div>
                         <div class="col-6 text-center">
                             <select class="form-select text-center w-25 mx-auto" name="size" aria-label="Default select example">
-                                <option selected>Select a size</option>
+                                <option selected value="default">Select a size</option>
                                 <option value="S">Small</option>
                                 <option value="M">Medium</option>
                                 <option value="L">Large</option>
                             </select>
+                            <div id="invalidSize" class="invalid-feedback text-center">
+                                Please select an option from the dropdown list
+                            </div>
                         </div>
                         <div class="col-3"></div>
                     </div>
@@ -137,11 +143,14 @@
                         </div>
                         <div class="col-6 text-center">
                             <select class="form-select text-center mx-auto" name="closet" aria-label="Default select example">
-                                <option selected>Select a closet</option>
+                                <option selected value="default">Select a closet</option>
                                 <option value="business-attire">Business attire</option>
                                 <option value="casual">Casual</option>
                                 <option value="sports">Sports</option>
                             </select>
+                            <div id="invalidCloset" class="invalid-feedback text-center">
+                                Please select an option from the dropdown list
+                            </div>
                         </div>
                         <div class="col-3"></div>
                     </div>
@@ -156,6 +165,9 @@
                                 <option value="coats">Tops: Coats</option>
                                 <option value="shirts">Tops: Shirts</option>
                             </select>
+                            <div id="invalidCategory" class="invalid-feedback text-center">
+                                Please select an option from the dropdown list
+                            </div>
                         </div>
                         <div class="col-3"></div>
                     </div>
@@ -165,11 +177,14 @@
                         </div>
                         <div class="col-6 text-center">
                             <select class="form-select text-center mx-auto" name="brand" aria-label="Default select example">
-                                <option selected>Select a closet</option>
+                                <option selected value="default">Select a closet</option>
                                 <option value="gucci">Gucci</option>
                                 <option value="nike">Nike</option>
                                 <option value="amazon">Amazon</option>
                             </select>
+                            <div id="invalidBrand" class="invalid-feedback text-center">
+                                Please select an option from the dropdown list
+                            </div>
                         </div>
                         <div class="col-3"></div>
                     </div>
@@ -183,7 +198,7 @@
                     <div class="row py-4">
                         <div class="col-3 mx-auto d-flex justify-content-center">
                             <input type="submit" class="btn btn-outline-success mx-2" value="Confirm">
-                            <button type="button" class="btn btn-outline-danger mx-2" >Cancel</button>
+                            <button type="button" href="./index.html" class="btn btn-outline-danger mx-2" >Cancel</button>
                         </div>
                     </div>
                 </form>
