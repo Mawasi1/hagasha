@@ -3,6 +3,7 @@
     padding: 0;
 
 }
+
 header,
 main,
 footer,
@@ -12,12 +13,20 @@ section,
 div {
     display: block;
 }
+
 main{
     background-color: #F7F6F6;
 }
+
+header{
+    
+    
+}
+
 nav{
     margin-left:50px;
 }
+
 .main-container{
     background-color: white;
 }
@@ -58,28 +67,6 @@ nav{
     min-width: 120px;
     max-width: 120px;
 }
-<<<<<<< Updated upstream
-=======
-.card img, .card{
-    min-width: 200px;
-    max-width: 200px;
-}
-.row-added-product{
-    background-color: #F7F6F6;
-}
-#add-clothing {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#add-clothing img {
-    display: block;
-    height: 25px;
-    width: 25px;
-}
->>>>>>> Stashed changes
 @media only screen and (max-width: 900px){
     .breadcrumb{
         display: none;
