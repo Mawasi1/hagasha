@@ -10,7 +10,7 @@
           crossorigin="anonymous"></script>
   <script src="./js/script.js"></script>
   <link rel="stylesheet" href="./css/style.css">
-  <title>Add product form</title>
+  <title>Clother - Product added successfully</title>
 </head>
 <body>
 <header class="p-4 py-3 border-bottom">
