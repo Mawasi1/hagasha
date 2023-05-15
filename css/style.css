@@ -17,6 +17,9 @@ main {
 nav {
     margin-left: 50px;
 }
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
 .main-container {
     background-color: white;
 }
